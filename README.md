@@ -16,12 +16,16 @@ pip install -r requirements.txt
 4.Execute o script:
 python src/main.py
 
+
 📂 Estrutura do Projeto
 data/challenge.xlsx: Planilha com os dados a serem preenchidos no site.
 
 src/main.py: Script principal que inicia a automação.
+
 src/resources/roboSelenium.py: Código que faz uma seleção de algumas funções do Selenium para que o script principal possa ficar mais simples.
+
 src/resources/config.py: Script de configurações.
+
 
 🛠️ Tecnologias Utilizadas
 Python 3.x
