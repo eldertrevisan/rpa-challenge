@@ -14,7 +14,7 @@ pip install -r requirements.txt
 3. Certifique-se de ter o Google Chrome instalado. Não há necessidade de baixar o chromedriver, o código utiliza um método para baixá-lo automaticamente.
 
 4.Execute o script:
-python src/main.py
+python -m src.main
 
 
 📂 Estrutura do Projeto
