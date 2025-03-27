@@ -1,10 +1,14 @@
-import os.path
+import os
+import sys
 from time import sleep
 import pandas as pd
 import logging
 from datetime import datetime
 from pathlib import Path
 from resources.roboSelenium import RoboSelenium
+
+
+sys.path.append(os.path.abspath(os.path.dirname(__file__)))
 
 
 def read_xlsx(file):
@@ -76,6 +80,7 @@ if __name__ == "__main__":
     log_rpa = logging.getLogger('log_rpa')
     log_rpa.setLevel(logging.INFO)
     log_dir = os.path.join(Path(__file__).parent, '..', 'logs')
+    os.makedirs(log_dir, exist_ok=True)  # Create the log directory if it doesn't exist
     file_handler_rpa = logging.FileHandler(os.path.join(log_dir, f'rpa-challenge - {datetime.now().strftime("%Y-%m-%d")}.log'), encoding="utf-8")
     formatter = logging.Formatter('%(asctime)s - %(levelname)s -- %(message)s')
     file_handler_rpa.setFormatter(formatter)
