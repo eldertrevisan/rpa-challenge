@@ -1,14 +1,10 @@
 import os
-import sys
 from time import sleep
 import pandas as pd
 import logging
 from datetime import datetime
 from pathlib import Path
-from resources.roboSelenium import RoboSelenium
-
-
-sys.path.append(os.path.abspath(os.path.dirname(__file__)))
+from src.resources.roboSelenium import RoboSelenium
 
 
 def read_xlsx(file):
