@@ -79,19 +79,19 @@ class RoboSelenium:
         self.chrome_options.add_argument("--disable-blink-features=AutomationControlled") # prevents sites from detecting automated behavior
 
     def open_url(self, url: str):
-        """Abre a URL especificada no navegador."""
+        """Opens the specified URL in the browser."""
         self.driver.get(url)
 
     def close_browser(self):
-        """Fecha a janela atual do navegador."""
+        """Closes the current browser window."""
         self.driver.close()
 
     def quit_driver(self):
-        """Encerra completamente o driver do Selenium."""
+        """Completely shuts down the Selenium driver."""
         self.driver.quit()
 
     def document_ready_state(self, timeout: int = 30):
-        """Aguarda até que o estado do documento seja 'complete'."""
+        """Waits until the document's ready state is 'complete'."""
         return WebDriverWait(self.driver, timeout).until(
             lambda d: d.execute_script("return document.readyState") == "complete"
         )
@@ -118,15 +118,15 @@ class RoboSelenium:
         )
 
     def send_key(self, element, text: str):
-        """Envia texto para um campo de entrada."""
+        """Sends text to an input field."""
         element.send_keys(text)
 
     def click_xpath(self, xpath: str, timeout: int = 10):
-        """Espera até que um elemento seja clicável e o retorna."""
+        """Waits until an element is clickable and clicks it."""
         return WebDriverWait(self.driver, timeout).until(EC.element_to_be_clickable((By.XPATH, xpath)))
 
     def check_title(self, title: str, timeout: int = 10):
-        """Verifica se o título da página corresponde ao esperado."""
+        """Checks if the page title matches the expected title."""
         return WebDriverWait(self.driver, timeout).until(EC.title_is(title))
 
     def mouse_click(self, element: str):
@@ -138,10 +138,10 @@ class RoboSelenium:
             raise RuntimeError(f"Error clicking element {element}: {e}")
 
     def scroll_to_element(self, element: str):
-        """Rola a tela até um elemento específico."""
+        """Scrolls the screen to a specific element."""
         element_found = self.find_by_attribute('xpath', element)
         self.driver.execute_script("arguments[0].scrollIntoView({block: 'center'});", element_found)
 
     def exec_javascript(self, script: str):
-        """Executa um script JavaScript no contexto da página carregada."""
+        """Executes a JavaScript script in the context of the loaded page."""
         self.driver.execute_script(script)
