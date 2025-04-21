@@ -28,10 +28,10 @@ src/resources/roboSelenium.py: Código que faz uma seleção de algumas funçõe
 src/resources/config.py: Script de configurações. Aqui você pode definir se o navegador irá ser exibido ou não e também caso queira uma pasta personalizada de downloads (no caso desse projeto não existe nenhum download).
 
 
-🛠️ Tecnologias Utilizadas
-<img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat&amp;logo=python&amp;logoColor=white"> Python 3.x
-<img alt="Selenium" src="https://img.shields.io/badge/Selenium-43B02A?style=flat&amp;logo=selenium&amp;logoColor=white"> Selenium
-<img alt="Pandas" src="https://img.shields.io/badge/Pandas-150458?style=flat&amp;logo=pandas&amp;logoColor=white"> Pandas
+🛠️ Tecnologias Utilizadas:<br>
+<img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat&amp;logo=python&amp;logoColor=white"> Python 3.x<br>
+<img alt="Selenium" src="https://img.shields.io/badge/Selenium-43B02A?style=flat&amp;logo=selenium&amp;logoColor=white"> Selenium<br>
+<img alt="Pandas" src="https://img.shields.io/badge/Pandas-150458?style=flat&amp;logo=pandas&amp;logoColor=white"> Pandas<br>
 
 📜 Licença
 MIT
