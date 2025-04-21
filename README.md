@@ -27,9 +27,9 @@ python -m src.main
 
 
 ## 🛠️ Tecnologias Utilizadas:
-<img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat&amp;logo=python&amp;logoColor=white">       Python 3.x
-<img alt="Selenium" src="https://img.shields.io/badge/Selenium-43B02A?style=flat&amp;logo=selenium&amp;logoColor=white"> Selenium
-<img alt="Pandas" src="https://img.shields.io/badge/Pandas-150458?style=flat&amp;logo=pandas&amp;logoColor=white">       Pandas
+<img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat&amp;logo=python&amp;logoColor=white">&nbsp;&nbsp;
+<img alt="Selenium" src="https://img.shields.io/badge/Selenium-43B02A?style=flat&amp;logo=selenium&amp;logoColor=white">&nbsp;&nbsp;
+<img alt="Pandas" src="https://img.shields.io/badge/Pandas-150458?style=flat&amp;logo=pandas&amp;logoColor=white">&nbsp;&nbsp;
 
 📜 Licença
 MIT
