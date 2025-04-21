@@ -4,16 +4,15 @@ Este projeto resolve o desafio do [RPA Challenge](https://www.rpachallenge.com/)
 
 ## 🚀 Como Usar
 1. Clone o repositório:
-   ```sh
-   git clone https://github.com/seu-usuario/rpa-challenge.git
-   cd rpa-challenge
+git clone https://github.com/seu-usuario/rpa-challenge.git
+cd rpa-challenge
 
 2. Instale as dependências:
 pip install -r requirements.txt
 
 3. Certifique-se de ter o Google Chrome instalado. Não há necessidade de baixar o chromedriver, o código utiliza um método para baixá-lo automaticamente.
 
-4.Execute o script:
+4. Execute o script:
 python -m src.main
 
 
